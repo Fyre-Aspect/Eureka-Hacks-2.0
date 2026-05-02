@@ -3,9 +3,13 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  apiKey: "AIzaSyBeoK3maD-HOG_-KibN47AqzRUGxUhfW9c",
+  authDomain: "langlua-f910b.firebaseapp.com",
+  projectId: "langlua-f910b",
+  storageBucket: "langlua-f910b.firebasestorage.app",
+  messagingSenderId: "722900477082",
+  appId: "1:722900477082:web:e35dfa96ebd3946636eb23",
+  measurementId: "G-3HMGQRCZH2"
 }
 
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0]

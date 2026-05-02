@@ -6,7 +6,7 @@
     "server"
   ],
   "scripts": {
-    "dev": "concurrently \"npm run dev --workspace=extension\" \"npm run server:dev --workspace=server\"",
+    "dev": "concurrently \"npm run dev --workspace=extension\" \"npm run dev --workspace=server\"",
     "lint": "eslint extension/src server/src --ext .ts,.tsx",
     "typecheck": "tsc -b extension server"
   },

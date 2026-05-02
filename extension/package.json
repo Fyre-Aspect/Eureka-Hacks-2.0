@@ -2,10 +2,9 @@
   "name": "extension",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "webpack --watch",
+    "build": "webpack",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -16,22 +15,29 @@
     "zustand": "^5.0.12"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^2.0.0-beta.33",
     "@eslint/js": "^10.0.1",
+    "@tailwindcss/postcss": "^4.2.4",
     "@types/chrome": "^0.1.40",
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
+    "copy-webpack-plugin": "^14.0.0",
+    "css-loader": "^7.1.4",
     "eslint": "^10.2.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
+    "html-webpack-plugin": "^5.6.7",
     "postcss": "^8.5.13",
+    "postcss-loader": "^8.2.1",
+    "style-loader": "^4.0.0",
     "tailwindcss": "^4.2.4",
+    "ts-loader": "^9.5.7",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
-    "vite": "^8.0.10"
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
   }
 }
